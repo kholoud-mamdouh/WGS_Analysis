@@ -1,0 +1,65 @@
+/home/kholoudmamdouh/anaconda3/envs/quast/bin/quast uni.output/spades_assembly/contigs.fasta -o quast.output -t 23
+
+Version: 5.2.0
+
+System information:
+  OS: Linux-4.4.0-19041-Microsoft-x86_64-with-glibc2.35 (linux_64)
+  Python version: 3.10.10
+  CPUs number: 8
+
+Started: 2023-04-16 02:37:56
+
+Logging to /home/kholoudmamdouh/assemply2/quast.output/quast.log
+
+CWD: /home/kholoudmamdouh/assemply2
+Main parameters: 
+  MODE: default, threads: 23, min contig length: 500, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Contigs:
+  Pre-processing...
+  uni.output/spades_assembly/contigs.fasta ==> contigs
+
+2023-04-16 02:38:44
+Running Basic statistics processor...
+  Contig files: 
+    contigs
+  Calculating N50 and L50...
+    contigs, N50 = 62705, L50 = 21, auN = 78245.8, Total length = 4472768, GC % = 50.87, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/kholoudmamdouh/assemply2/quast.output/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/kholoudmamdouh/assemply2/quast.output/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/kholoudmamdouh/assemply2/quast.output/basic_stats/GC_content_plot.pdf
+  Drawing contigs GC content plot...
+    saved to /home/kholoudmamdouh/assemply2/quast.output/basic_stats/contigs_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 2x)...
+    saved to /home/kholoudmamdouh/assemply2/quast.output/basic_stats/coverage_histogram.pdf
+  Drawing contigs coverage histogram (bin size: 2x)...
+    saved to /home/kholoudmamdouh/assemply2/quast.output/basic_stats/contigs_coverage_histogram.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2023-04-16 02:39:03
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2023-04-16 02:39:06
+RESULTS:
+  Text versions of total report are saved to /home/kholoudmamdouh/assemply2/quast.output/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/kholoudmamdouh/assemply2/quast.output/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/kholoudmamdouh/assemply2/quast.output/report.html
+  PDF version (tables and plots) is saved to /home/kholoudmamdouh/assemply2/quast.output/report.pdf
+  Icarus (contig browser) is saved to /home/kholoudmamdouh/assemply2/quast.output/icarus.html
+  Log is saved to /home/kholoudmamdouh/assemply2/quast.output/quast.log
+
+Finished: 2023-04-16 02:39:07
+Elapsed time: 0:01:11.598656
+NOTICEs: 1; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

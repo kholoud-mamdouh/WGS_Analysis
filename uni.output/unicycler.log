@@ -1,0 +1,149 @@
+
+Starting Unicycler (2023-04-16 00:44:06)
+----------------------------------------
+    Welcome to Unicycler, an assembly pipeline for bacterial genomes. Since you provided only short reads, Unicycler will essentially function as a SPAdes-optimiser. It will try many k-mer sizes, choose the best based on contig length and graph connectivity, and scaffold the graph using SPAdes repeat resolution.
+    For more information, please see https://github.com/rrwick/Unicycler
+
+Command: /home/kholoudmamdouh/anaconda3/envs/unicycler/bin/unicycler -1 sample_1.fq.gz -2 sample_2.fq.gz -o uni.output -t 45
+
+Unicycler version: v0.5.0
+Using 45 threads
+
+Warning: you have specified a lot more threads than this machine seems to have! Was this intentional?
+
+Making output directory:
+  /home/kholoudmamdouh/assemply2/uni.output
+
+Dependencies:
+  Program       Version   Status  
+  spades.py     3.15.5    good    
+  racon                   not used
+  makeblastdb   2.5.0+    good    
+  tblastn       2.5.0+    good    
+
+
+Choosing k-mer range for assembly (2023-04-16 00:44:23)
+-------------------------------------------------------
+    Unicycler chooses a k-mer range for SPAdes based on the length of the input reads. It uses a wide range of many k-mer sizes to maximise the chance of finding an ideal assembly.
+
+SPAdes maximum k-mer: 127
+Median read length: 251
+K-mer range: 27, 53, 71, 87, 99, 111, 119, 127
+
+
+SPAdes assemblies (2023-04-16 00:44:32)
+---------------------------------------
+    Unicycler now uses SPAdes to assemble the short reads. It scores the assembly graph for each k-mer using the number of contigs (fewer is better) and the number of dead ends (fewer is better). The score function is 1/(c*(d+2)), where c is the contig count and d is the dead end count.
+
+spades.py -o /home/kholoudmamdouh/assemply2/uni.output/spades_assembly -k 27 --threads 32 --isolate -1 /home/kholoudmamdouh/assemply2/sample_1.fq.gz -2 /home/kholoudmamdouh/assemply2/sample_2.fq.gz -m 1024
+
+
+
+
+
+
+
+
+
+
+
+
+
+Starting Unicycler (2023-04-16 00:59:21)
+----------------------------------------
+    Welcome to Unicycler, an assembly pipeline for bacterial genomes. Since you provided only short reads, Unicycler will essentially function as a SPAdes-optimiser. It will try many k-mer sizes, choose the best based on contig length and graph connectivity, and scaffold the graph using SPAdes repeat resolution.
+    For more information, please see https://github.com/rrwick/Unicycler
+
+Command: /home/kholoudmamdouh/anaconda3/envs/unicycler/bin/unicycler -1 sample_1.fq.gz -2 sample_2.fq.gz -o uni.output -t 20
+
+Unicycler version: v0.5.0
+Using 20 threads
+
+Warning: you have specified a lot more threads than this machine seems to have! Was this intentional?
+
+The output directory already exists and files may be reused or overwritten:
+  /home/kholoudmamdouh/assemply2/uni.output
+
+Dependencies:
+  Program       Version   Status  
+  spades.py     3.15.5    good    
+  racon                   not used
+  makeblastdb   2.5.0+    good    
+  tblastn       2.5.0+    good    
+
+
+Choosing k-mer range for assembly (2023-04-16 00:59:42)
+-------------------------------------------------------
+    Unicycler chooses a k-mer range for SPAdes based on the length of the input reads. It uses a wide range of many k-mer sizes to maximise the chance of finding an ideal assembly.
+
+K-mer range already exists:
+  /home/kholoudmamdouh/assemply2/uni.output/spades_assembly/kmer_range
+
+Will use this existing range:
+  27, 53, 71, 87, 99, 111, 119, 127
+
+
+SPAdes assemblies (2023-04-16 00:59:42)
+---------------------------------------
+    Unicycler now uses SPAdes to assemble the short reads. It scores the assembly graph for each k-mer using the number of contigs (fewer is better) and the number of dead ends (fewer is better). The score function is 1/(c*(d+2)), where c is the contig count and d is the dead end count.
+
+spades.py -o /home/kholoudmamdouh/assemply2/uni.output/spades_assembly -k 27 --threads 20 --isolate -1 /home/kholoudmamdouh/assemply2/sample_1.fq.gz -2 /home/kholoudmamdouh/assemply2/sample_2.fq.gz -m 1024
+
+spades.py -o /home/kholoudmamdouh/assemply2/uni.output/spades_assembly -k 27,53 --threads 20 --restart-from k27 -m 1024
+
+spades.py -o /home/kholoudmamdouh/assemply2/uni.output/spades_assembly -k 27,53,71 --threads 20 --restart-from k53 -m 1024
+
+spades.py -o /home/kholoudmamdouh/assemply2/uni.output/spades_assembly -k 27,53,71,87 --threads 20 --restart-from k71 -m 1024
+
+
+
+
+
+
+
+
+
+
+
+
+
+Starting Unicycler (2023-04-16 02:21:27)
+----------------------------------------
+    Welcome to Unicycler, an assembly pipeline for bacterial genomes. Since you provided only short reads, Unicycler will essentially function as a SPAdes-optimiser. It will try many k-mer sizes, choose the best based on contig length and graph connectivity, and scaffold the graph using SPAdes repeat resolution.
+    For more information, please see https://github.com/rrwick/Unicycler
+
+Command: /home/kholoudmamdouh/anaconda3/envs/unicycler/bin/unicycler -1 sample_1.fq.gz -2 sample_2.fq.gz -o uni.output -t 10
+
+Unicycler version: v0.5.0
+Using 10 threads
+
+The output directory already exists and files may be reused or overwritten:
+  /home/kholoudmamdouh/assemply2/uni.output
+
+Dependencies:
+  Program       Version   Status  
+  spades.py     3.15.5    good    
+  racon                   not used
+  makeblastdb   2.5.0+    good    
+  tblastn       2.5.0+    good    
+
+
+Choosing k-mer range for assembly (2023-04-16 02:21:44)
+-------------------------------------------------------
+    Unicycler chooses a k-mer range for SPAdes based on the length of the input reads. It uses a wide range of many k-mer sizes to maximise the chance of finding an ideal assembly.
+
+K-mer range already exists:
+  /home/kholoudmamdouh/assemply2/uni.output/spades_assembly/kmer_range
+
+Will use this existing range:
+  27, 53, 71, 87, 99, 111, 119, 127
+
+
+SPAdes assemblies (2023-04-16 02:21:44)
+---------------------------------------
+    Unicycler now uses SPAdes to assemble the short reads. It scores the assembly graph for each k-mer using the number of contigs (fewer is better) and the number of dead ends (fewer is better). The score function is 1/(c*(d+2)), where c is the contig count and d is the dead end count.
+
+spades.py -o /home/kholoudmamdouh/assemply2/uni.output/spades_assembly -k 27 --threads 10 --isolate -1 /home/kholoudmamdouh/assemply2/sample_1.fq.gz -2 /home/kholoudmamdouh/assemply2/sample_2.fq.gz -m 1024
+
+spades.py -o /home/kholoudmamdouh/assemply2/uni.output/spades_assembly -k 27,53 --threads 10 --restart-from k27 -m 1024
+Error: SPAdes failed to produce an assembly graph: /home/kholoudmamdouh/assemply2/uni.output/spades_assembly/K53/assembly_graph_with_scaffolds.gfa
